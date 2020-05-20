@@ -1,0 +1,236 @@
+/*====================
+BASIC SETUP 
+=====================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* ul li {
+    list-style-type: none;  /*hiding all bullet point */
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+/*All Heading Tag */
+h1 {
+    font-size: 28px;
+    color: #fff;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+/*====================
+REUSABLE COMPONENT
+=====================*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+section{
+    padding: 8rem 0%;
+}
+
+h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+}
+h2:after{
+    content: "";
+    display: block;
+    height: .3rem;
+    background: #fff;
+    width: 85px;
+    margin: auto;
+    margin-top: .6rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #27283d;
+}
+/* Little Description- Paragraph */
+.little-description{
+    font-size: 1rem;
+    width: 60%;
+    margin-left: 20%;
+    line-height: 1.3rem;
+}
+.box{
+    padding: 1%;
+}
+.box p{
+    font-size: .8;
+    margin-top: 2rem;
+    font-weight: 300;
+    color: #fff;
+}
+/*BUTTON STYLE*/
+.btn:link,
+.btn:visited,
+.btn {
+    background: #333333;
+    border-bottom: 3px solid #000000;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 45px;
+}
+
+/*====================
+HEADER SECTION
+=====================*/
+header{
+    background: linear-gradient(#87509cd8 ,#87509cd7) ,url(img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 85vh; /*header section 85% */
+    position: relative;
+    background-attachment: fixed;
+}
+
+.logo{
+    height: 35px;
+    width: auto;
+    margin-top: 35px;
+    float: left;
+
+}
+
+/* Main Navigation */
+* .main-nav{
+    float: right;
+    margin-top: 40px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.main-nav li:first-child{
+    margin-left: 0px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #643a7900;
+    padding: 6px 16px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited{
+    background: #643a79;
+}
+
+.main-nav li.active a{
+    background: #643a79;
+    border-radius: 3px;
+}
+
+.hero-text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn-hero:link,
+.btn-hero:visited{
+    background: #eb7d4b;
+    border-color: #c86a40;
+}
+
+/*====================
+SERVICE SECTION
+=====================*/
+
+.service-section{
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(#17c2a3ee, #17c2a3ea) , url(img/services-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.service-section h2:after{
+    background: #14a58c;
+}
+
+.services-icon{
+    height: 5rem;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+}
+/*====================
+TEAM SECTION
+=====================*/
+.team-section{
+    text-align: center;
+    background: #e7f1f8;
+}
+
+.team-section h2{
+    color: #3c4761;
+}
+/* pseudo elements.. why :: ? */
+.team-section h2::after{
+    background: #c8d9e5;
+}
+.team-member{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 50%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.role{
+    color: #30bae7;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-top: .5rem;
+}
+.team-section .box p{
+    color: #3c4761;
+}
+.social-link{
+    margin-top: 2.5rem;
+}
+.social-link ul li{
+    display: inline-block;
+    margin: 0 .5rem;
+}
+.social-link ul li a:link{
+    color: #fff;
+}
+
